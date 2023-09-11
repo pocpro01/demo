@@ -1,0 +1,175 @@
+/*
+  Built by Roy Hewitt
+  Created: May 12, 2014
+  Updated:
+
+  Sass is a CSS pre-processing language that gives us all sorts of nifty tools like variables, and mixins.  Learn more at
+  http://sass-lang.com/
+
+  Scss stylesheets are compiled using a Ruby Gem called Compass.  It can be found at http://compass-style.org/install/
+
+  All scss stylesheets are eventually compiled into vanilla CSS.  If you're unfamiliar with scss feel free to stick to
+  plain old CSS.
+
+  CSS is much easier to maintain when it is split up into discrete chunks.  In order to compile sass files into a single 
+  stylesheet we need to import the individual pieces into a master file (this is that file!).
+*/
+/* line 1, ../sass/_header.scss */
+header {
+  height: 60px;
+  margin: 0;
+  padding: 0;
+}
+/* line 6, ../sass/_header.scss */
+header #logo {
+  position: absolute;
+  left: 15px;
+  top: 4px;
+}
+/* line 12, ../sass/_header.scss */
+header #org-bar {
+  height: 36px;
+  background-color: #000;
+  color: #fff;
+}
+/* line 17, ../sass/_header.scss */
+header #org-bar h2 {
+  padding: 7px 0 0 0;
+  margin: 0 0 0 150px;
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* line 25, ../sass/_header.scss */
+header #title-bar {
+  height: 50px;
+  background-color: #fff;
+  color: #000;
+}
+/* line 30, ../sass/_header.scss */
+header #title-bar h1 {
+  padding: 10px auto;
+  margin: 0 0 0 2px;
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+/* line 39, ../sass/_header.scss */
+header #office-bar {
+  margin-top: 12px;
+  height: 32px;
+  background-color: #0074d9;
+  position: relative;
+  color: white;
+}
+/* line 45, ../sass/_header.scss */
+/*header #office-bar h5 {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 0px;
+  top: auto;
+}*/
+header #office-bar2 {
+  height: 60px;
+  background-color: #0074d9;
+  position: relative;
+  color: white;
+}
+
+/* line 1, ../sass/_map.scss */
+#map {
+  height: 100%;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+/* line 1, ../sass/_footer.scss */
+footer {
+  height: 75px;
+  background-color: #0074d9;
+  color: #fff;
+  text-align: center;
+}
+/* line 8, ../sass/_footer.scss */
+footer a {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+}
+/* line 13, ../sass/_footer.scss */
+footer a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+/* line 24, ../sass/main.scss */
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* line 32, ../sass/main.scss */
+.tab-content {
+  margin-top: 10px;
+}
+
+footer #links p {
+  margin-top: -4px;
+}
+
+/* Leaflet Layers Control */
+
+.leaflet-control-layers {
+  border-radius: none;
+  box-shadow: none;
+}
+
+.leaflet-control-layers-expanded {
+  width: 100% !important;
+  padding: 0px;
+  background-color: transparent;
+  border: none !important;
+}
+
+#layercontrol {
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+  background-color: transparent;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+#layercontrol .title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#latlng {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 2px 7px 1px 3px;
+  margin-left: auto;
+  margin-right: auto;
+  color: black;
+  background-color: white;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  -webkit-box-shadow: 0px -2px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px -2px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px -2px 5px 0px rgba(0, 0, 0, 0.75);
+  z-index: 1000;
+  display: none;
+}
