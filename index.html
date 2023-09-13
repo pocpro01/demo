@@ -45,6 +45,7 @@
     <div class="leaflet-sidebar-tabs">
       <ul role="tablist">
         <li><a href="#home" role="tab"><i class="fa fa-bars"></i></a></li>
+        <li><a href="#summary" role="tab"><i class="far fa-file-alt"></i></a></li>
       </ul>
     </div>
 
@@ -52,11 +53,30 @@
     <div class="leaflet-sidebar-content">
       <div class="leaflet-sidebar-pane" id="home">
         <h1 class="leaflet-sidebar-header">
-          Data Panel
+          Map Panel
           <span class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></span>
         </h1>
         <span id="layercontrol"></span>
         <div id="latlng"></div>
+      </div>
+      <div class="leaflet-sidebar-pane" id="summary">         
+        <h1 class="leaflet-sidebar-header">
+          Summary Panel
+          <span class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></span>
+        </h1>
+        <h4 style="margin-top: 15px;">PARCEL INFORMATION</h4>
+        <hr>
+        <h5 id="oname"></h5>
+        <h5 id="odist"></h5>
+        <h5 id="oblock"></h5>
+        <h5 id="ovill"></h5>
+        <h5 id="ocode"></h5>
+        <h5 id="olndhld"></h5>
+        <hr>
+        <h5 id="osoil"></h5>
+        <h5 id="oscrop"></h5>
+        <h5 id="omcrop"></h5>
+        <h5 id="oyld"></h5>
       </div>
     </div>
   </div>
