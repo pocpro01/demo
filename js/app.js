@@ -199,9 +199,14 @@ $.when(assam_js, proto_js).done(function() {
                   duration: 3 // in seconds
               });
 
+  }, 2000);
+
+  //post map load and removing assam bound load parcel bound
+  setTimeout(function(){
+
       //AOI:parcel data added to map
       parcel_bound.addTo(map);
-
+    
   }, 2000);
 
 
