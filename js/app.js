@@ -150,14 +150,14 @@ $.when(assam_js, proto_js).done(function() {
         { label: ' OSM CyclOSM', layer: CyclOSM },
         ]
     },
-    {
+    /*{
       label: 'Google Maps',
       children: [
         { label: ' Google Road', layer: GoogleRoadmapAlt },
         { label: ' Google Satellite', layer: GoogleSat },
         { label: ' Google Hybrid', layer: googleHybrid},
         ]
-    },
+    },*/
     ]
   };
 
