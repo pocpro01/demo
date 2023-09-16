@@ -31,6 +31,12 @@
     attribution: 'google roadmap view'
   });
 
+var ESRIImagery = L.tileLayer('https://{s}.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+    minZoom: 1,
+    maxZoom: 19,
+    subdomains: ['server', 'services']
+  });
+
 
 //loading dist overlay file 
 var assam_js = $.ajax({
@@ -133,6 +139,8 @@ $.when(assam_js, proto_js).done(function() {
     "OSM": OSMBase,
     "OSM Terrain": OpenTopoMap,
     "OSM CyclOSM": CyclOSM,
+
+    "ESRI Imagery": ESRIImagery,
     
     "Google Road": GoogleRoadmapAlt,
     "Google Hybrid": googleHybrid,
@@ -149,6 +157,14 @@ $.when(assam_js, proto_js).done(function() {
         { label: ' OSM Terrain', layer: OpenTopoMap },
         { label: ' OSM CyclOSM', layer: CyclOSM },
         ]
+    },
+    {
+      label: ' ESRI Layers',
+      children: [
+        {
+          [ { label: 'ESRI Imagery', layer: ESRIImagery } ]
+        },
+      ]
     },
     /*{
       label: 'Google Maps',
