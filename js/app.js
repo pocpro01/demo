@@ -161,9 +161,7 @@ $.when(assam_js, proto_js).done(function() {
     {
       label: ' ESRI Layers',
       children: [
-        {
-          [ { label: 'ESRI Imagery', layer: ESRIImagery } ]
-        },
+        { label: 'ESRI Imagery', layer: ESRIImagery },
       ]
     },
     /*{
